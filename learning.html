@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        .container {
+            width: 10px;
+            height: 10px;
+            background: black;
+
+        }
+
+        .vivek {
+            width: 10px;
+            height: 10px;
+            background: pink;
+        }
+    </style>
+</head>
+
+<body>
+    <button onclick="console.log('button was clicked')">Click me</button>
+    <div class="x"></div>
+    <button onclick="count"></button>
+    <script>
+        let count = 43;
+        
+        let x;
+        if (count % 2 === 0) {
+            x = 'container';
+        } else {
+            x = 'vivek';
+        } document.querySelector('.x').classList.add(x);
+
+    </script>
+</body>
+
+</html>
